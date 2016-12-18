@@ -19,23 +19,3 @@ alias QQ='exit'
 alias vv='vim ~/.vimrc'
 alias bf='find * -xdev -type f -size +200M'
 alias zt='clear'
-
-# commandes Instant Précieux
-alias gdev='cd ~/www/dev'
-alias gd='cd ~/www/dev'
-alias gprod='cd ~/www/magento'
-alias gp='cd ~/www/magento'
-alias gh='cd ~/www/HOME'
-
-function myhelp {
-  echo "== Alias HELP =="
-  echo "-Magerun-"
-  echo "magerun, mg, mm: n98-magerun.phar"
-  echo "cf, cc: cache flush"
-  echo "ii: reindex all"
-  echo "ci: cache flush, reindex all"
-  echo "-Instant Précieux-"
-  echo "gdev, gd: go dev"
-  echo "gprod, gp: go prod"
-}
-
