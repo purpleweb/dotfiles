@@ -1,7 +1,7 @@
 # vim: filetype=sh
 
 # commandes Magerun
-alias magerun="n98-magerun.phar"
+alias magerun='n98-magerun.phar'
 alias mg='n98-magerun.phar'
 alias mm='n98-magerun.phar'
 alias cf='n98-magerun.phar cache:flush'
