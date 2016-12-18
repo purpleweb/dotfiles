@@ -17,5 +17,6 @@ alias ff='find * -type f'
 alias pp='vim ~/.bash_aliases'
 alias QQ='exit'
 alias vv='vim ~/.vimrc'
+alias bf='find * -xdev -type f -size +200M'
 
 
