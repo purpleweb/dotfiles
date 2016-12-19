@@ -30,13 +30,3 @@ alias gf='git diff-tree --no-commit-id --name-only -r'
 alias ga='git add'
 alias gm='git commit -m'
 alias gd='git diff --color'
-
-# commandes Instant Précieux
-alias dev='cd ~/www/dev'
-alias prod='cd ~/www/magento'
-alias home='cd ~/www/HOME'
-
-function toPROD {
-  git diff-tree --no-commit-id --name-only -r "$1" | xargs cp --parents -t ../magento
-}
-
