@@ -1,7 +1,7 @@
 # vim: filetype=sh
 
 # commandes Magerun
-alias magerun="n98-magerun.phar"
+alias magerun='n98-magerun.phar'
 alias mg='n98-magerun.phar'
 alias mm='n98-magerun.phar'
 alias cf='n98-magerun.phar cache:flush'
@@ -15,10 +15,28 @@ alias grep='grep --color=auto'
 alias gg='grep --color=auto -rnw . -e '
 alias ff='find * -type f'
 alias pp='vim ~/.bash_aliases'
-alias QQ='exit'
+alias spp='source ~/.bash_aliases'
+alias Q='exit'
 alias vv='vim ~/.vimrc'
 alias bf='find * -xdev -type f -size +200M'
 alias zt='clear'
 alias e='vim'
 alias gfiles='git log --name-only --color'
-alias gl='git log --name-only --color'
+
+# commandes git
+alias gst='git status'
+alias gl='git log --oneline --color'
+alias gf='git diff-tree --no-commit-id --name-only -r'
+alias ga='git add'
+alias gm='git commit -m'
+alias gd='git diff --color'
+
+# commandes Instant Précieux
+alias dev='cd ~/www/dev'
+alias prod='cd ~/www/magento'
+alias home='cd ~/www/HOME'
+
+function toPROD {
+  git diff-tree --no-commit-id --name-only -r "$1" | xargs cp --parents -t ../magento
+}
+
