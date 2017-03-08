@@ -4,6 +4,8 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+set t_Co=256
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -13,10 +15,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'morhetz/gruvbox'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -41,15 +48,13 @@ filetype plugin indent on " load file type plugins + indentation
 
 set clipboard=unnamed
 
-:color desert
-" set shiftwidth=4
-" set relativenumber
-" set number
+colorscheme gruvbox
+set background=dark
 
 
 "" Whitespace
 set nowrap " don't wrap lines
-set tabstop=2 shiftwidth=2 " a tab is two spaces (or set this to 4)
+set tabstop=4 shiftwidth=4 " a tab is two spaces (or set this to 4)
 set expandtab " use spaces, not tabs (optional)
 set backspace=indent,eol,start " backspace through everything in insert mode
 
@@ -66,3 +71,30 @@ map <C-l> <C-]>
 map Q <Nop>
 
 set pastetoggle=<F2>
+
+set wildmenu
+
+" <Leader> is "\"... but on azerty keyboard it better to use "," wich is more accessible
+let mapleader = "\<Space>"
+
+
+
+" command Documentation split $HOME/.vim/sheets/documentation.txt
+
+set tags=./tags;/
+
+set laststatus=2
+
+" air-line
+let g:airline_symbols_ascii = 1
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
