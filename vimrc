@@ -74,20 +74,23 @@ set pastetoggle=<F2>
 
 set wildmenu
 
-" <Leader> is "\"... but on azerty keyboard it better to use "," wich is more accessible
 let mapleader = "\<Space>"
 
+nmap <leader>n :NERDTreeToggle<CR>
 
 
 " command Documentation split $HOME/.vim/sheets/documentation.txt
 
 set tags=./tags;/
 
-set laststatus=2
 
 " air-line
-let g:airline_symbols_ascii = 1
 
+let g:airline_symbols_ascii = 1
+set laststatus=2
+
+
+" Syntastic configuration
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -97,4 +100,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+
+" NERDTree configuration
+
+let g:NERDTreeDirArrowExpandable = '+'
+let g:NERDTreeDirArrowCollapsible = '-'
+
 
