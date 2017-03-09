@@ -149,12 +149,11 @@ alias ff='find * -type f'
 alias pp='vim ~/.bashrc'
 alias spp='source ~/.bashrc'
 alias Q='exit'
-alias C='clear'
 alias vv='vim ~/.vimrc'
-alias bf='find * -xdev -type f -size +200M'
+alias bf='find * -xdev -type f -size +200M' # find big files 200Mo+
 alias zt='clear'
+alias C='clear'
 alias e='vim'
-alias gfiles='git log --name-only --color'
 
 # commandes git
 alias gst='git status'
@@ -164,6 +163,7 @@ alias gf='git diff-tree --no-commit-id --name-only -r'
 alias ga='git add'
 alias gm='git commit -m'
 alias gd='git diff --color'
+alias gfiles='git log --name-only --color'
 
 
 
