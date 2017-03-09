@@ -158,6 +158,7 @@ alias gfiles='git log --name-only --color'
 
 # commandes git
 alias gst='git status'
+alias CS='clear; git status;'
 alias gl='git log --oneline --color'
 alias gf='git diff-tree --no-commit-id --name-only -r'
 alias ga='git add'
