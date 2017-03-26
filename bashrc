@@ -165,6 +165,6 @@ alias gm='git commit -m'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
 
-
-
+# wp autocompletion
+source /usr/local/bin/wp-completion.bash
 
