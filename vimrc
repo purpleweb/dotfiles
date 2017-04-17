@@ -24,6 +24,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'matchit.zip'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 
 " All of your Plugins must be added before the following line
