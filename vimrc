@@ -26,6 +26,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'matchit.zip'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'raimondi/delimitmate'
+Plugin 'tpope/vim-commentary'
+Plugin 'stanangeloff/php.vim'
+Plugin 'ap/vim-css-color'
+Plugin 'majutsushi/tagbar'
+
 
 
 " All of your Plugins must be added before the following line
@@ -111,4 +116,6 @@ let g:syntastic_check_on_wq = 0
 let g:NERDTreeDirArrowExpandable = '+'
 let g:NERDTreeDirArrowCollapsible = '-'
 
+" Tagbar configuration
 
+nmap <F8> :TagbarToggle<CR>
