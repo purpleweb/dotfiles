@@ -32,7 +32,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'majutsushi/tagbar'
 Plugin 'nelsyeung/twig.vim'
 Plugin 'alvan/vim-php-manual'
-
+Plugin 'godlygeek/tabular'
 
 
 " All of your Plugins must be added before the following line
