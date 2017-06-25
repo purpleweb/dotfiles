@@ -9,15 +9,12 @@ set t_Co=256
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'morhetz/gruvbox'
-"Plugin 'kien/ctrlp.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
+"Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
@@ -28,29 +25,16 @@ Plugin 'matchit.zip'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'raimondi/delimitmate'
 Plugin 'tpope/vim-commentary'
-Plugin 'stanangeloff/php.vim'
 Plugin 'ap/vim-css-color'
 Plugin 'majutsushi/tagbar'
 Plugin 'nelsyeung/twig.vim'
-Plugin 'alvan/vim-php-manual'
 Plugin 'godlygeek/tabular'
+Plugin 'stanangeloff/php.vim'
+Plugin 'alvan/vim-php-manual'
 Plugin 'adoy/vim-php-refactoring-toolbox'
-
-
-" All of your Plugins must be added before the following line
+Plugin 'shawncplus/phpcomplete.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 " set nocompatible " choose no compatibility with legacy vi
 syntax on
@@ -132,5 +116,5 @@ set listchars=eol:¬
 
 " Ctrl-P config
 " Ctrl-Y opening mode : tab
-let g:ctrlp_by_filename = 0
+" let g:ctrlp_by_filename = 0
 
