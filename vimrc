@@ -33,6 +33,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'nelsyeung/twig.vim'
 Plugin 'alvan/vim-php-manual'
 Plugin 'godlygeek/tabular'
+Plugin 'adoy/vim-php-refactoring-toolbox'
 
 
 " All of your Plugins must be added before the following line
