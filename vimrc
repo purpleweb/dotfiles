@@ -33,6 +33,7 @@ Plugin 'stanangeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
 Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -47,6 +48,7 @@ set clipboard=unnamed
 colorscheme gruvbox
 set background=dark
 
+set number
 
 "" Whitespace
 set nowrap " don't wrap lines
