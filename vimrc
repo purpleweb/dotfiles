@@ -123,3 +123,6 @@ set listchars=eol:¬
 " Ctrl-Y opening mode : tab
 " let g:ctrlp_by_filename = 0
 
+" Splits
+set splitbelow
+set splitright
