@@ -65,7 +65,7 @@ set smartcase " ...unless they contain at least one capital letter
 
 "" liens pour le help
 " map <C-l> <C-]>
-nmap <leader>l :execute ":tag ".expand("<cword>")<CR>
+map <leader>l <C-]>
 
 "" desactivation de Ex Mode
 map Q <Nop>
