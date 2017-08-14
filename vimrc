@@ -34,7 +34,8 @@ Plugin 'alvan/vim-php-manual'
 Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -64,8 +65,8 @@ set ignorecase " searches are case insensitive...
 set smartcase " ...unless they contain at least one capital letter
 
 "" liens pour le help
-" map <C-l> <C-]>
-map <leader>l <C-]>
+map <C-l> <C-]>
+" map <leader>l <C-]>
 
 "" desactivation de Ex Mode
 map Q <Nop>
