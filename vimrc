@@ -33,6 +33,9 @@ Plugin 'stanangeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
 Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
+" Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -47,6 +50,7 @@ set clipboard=unnamed
 colorscheme gruvbox
 set background=dark
 
+set number
 
 "" Whitespace
 set nowrap " don't wrap lines
@@ -58,10 +62,11 @@ set backspace=indent,eol,start " backspace through everything in insert mode
 " set hlsearch " highlight matches
 set incsearch " incremental searching
 set ignorecase " searches are case insensitive...
-set smartcase "...unless they contain at least one capital letter
+set smartcase " ...unless they contain at least one capital letter
 
 "" liens pour le help
 map <C-l> <C-]>
+" map <leader>l <C-]>
 
 "" desactivation de Ex Mode
 map Q <Nop>
@@ -110,7 +115,8 @@ let g:NERDTreeDirArrowCollapsible = '-'
 nmap <F8> :TagbarToggle<CR>
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+" Show *w*hite spaces
+nmap <leader>w :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=eol:¬
@@ -119,3 +125,6 @@ set listchars=eol:¬
 " Ctrl-Y opening mode : tab
 " let g:ctrlp_by_filename = 0
 
+" Splits
+set splitbelow
+set splitright
