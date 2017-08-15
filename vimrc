@@ -89,6 +89,7 @@ set laststatus=2
 
 " Syntastic configuration
 
+"set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
