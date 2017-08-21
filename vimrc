@@ -12,7 +12,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'morhetz/gruvbox'
 Plugin 'kien/ctrlp.vim'
 "Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
@@ -37,6 +36,10 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
+
+" themes
+" Plugin 'morhetz/gruvbox'
+Plugin 'dracula/vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -48,7 +51,7 @@ filetype plugin indent on " load file type plugins + indentation
 
 set clipboard=unnamed
 
-colorscheme gruvbox
+colorscheme dracula
 set background=dark
 
 set number
@@ -95,6 +98,7 @@ set laststatus=2
 
 " Syntastic configuration
 
+"set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
