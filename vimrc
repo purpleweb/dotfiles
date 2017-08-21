@@ -35,6 +35,7 @@ Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mileszs/ack.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -127,3 +128,10 @@ set listchars=eol:¬
 " Splits
 set splitbelow
 set splitright
+
+" Ack Ag
+let g:ackprg = 'ag --vimgrep --smart-case'                                                   
+cnoreabbrev ag Ack                                                                           
+cnoreabbrev aG Ack                                                                           
+cnoreabbrev Ag Ack                                                                           
+cnoreabbrev AG Ack  
