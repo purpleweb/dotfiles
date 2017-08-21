@@ -18,6 +18,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
 Plugin 'matchit.zip'
@@ -38,8 +39,8 @@ Plugin 'mileszs/ack.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 
 " themes
-" Plugin 'morhetz/gruvbox'
-Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
+" Plugin 'dracula/vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -51,7 +52,7 @@ filetype plugin indent on " load file type plugins + indentation
 
 set clipboard=unnamed
 
-colorscheme dracula
+colorscheme gruvbox
 set background=dark
 
 set number
@@ -91,10 +92,11 @@ set tags=./tags;/
 
 
 " air-line
-
 let g:airline_symbols_ascii = 1
 set laststatus=2
-
+" let g:airline_powerline_fonts = 1
+" let g:airline_theme='simple'
+" let g:airline#extensions#tabline#enabled = 1
 
 " Syntastic configuration
 
