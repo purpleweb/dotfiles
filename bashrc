@@ -165,7 +165,13 @@ alias ga='git add'
 alias gm='git commit -m'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
+alias gb='git branch'
+
+alias cdd='cd $(git rev-parse --show-cdup)'
 
 # wp autocompletion
-source /usr/local/bin/wp-completion.bash
+WP_COMPL=/usr/local/bin/wp-completion.bash
+if [ -f $WP_COMPL ]; then
+    source $WP_COMPL
+fi
 
