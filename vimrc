@@ -76,8 +76,8 @@ map <C-l> <C-]>
 "" desactivation de Ex Mode
 map Q <Nop>
 
-" set pastetoggle=<F2>
-set pastetoggle=<leader>p
+set pastetoggle=<F2>
+" set pastetoggle=<leader>p
 
 set wildmenu
 
