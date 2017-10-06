@@ -170,6 +170,7 @@ alias gb='git branch'
 alias cdd='cd $(git rev-parse --show-cdup)'
 
 # wp autocompletion
+# @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
 WP_COMPL=/usr/local/bin/wp-completion.bash
 if [ -f $WP_COMPL ]; then
     source $WP_COMPL
