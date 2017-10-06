@@ -130,7 +130,7 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 
-# source ~/.bash-git-prompt/gitprompt.sh
+source ~/.bash-git-prompt/gitprompt.sh
 
 
 # commandes Magerun
@@ -160,6 +160,7 @@ alias e='vim'
 alias gst='git status'
 alias CS='clear; git status;'
 alias gl='git log --oneline --color'
+alias gll='git log --oneline --color --decorate --graph'
 alias gf='git diff-tree --no-commit-id --name-only -r'
 alias ga='git add'
 alias gm='git commit -m'
