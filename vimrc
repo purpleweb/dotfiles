@@ -56,6 +56,7 @@ colorscheme gruvbox
 set background=dark
 
 set number
+set relativenumber
 
 "" Whitespace
 set nowrap " don't wrap lines
