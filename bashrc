@@ -177,3 +177,5 @@ if [ -f $WP_COMPL ]; then
     source $WP_COMPL
 fi
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
