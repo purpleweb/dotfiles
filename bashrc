@@ -141,6 +141,7 @@ alias cf='n98-magerun.phar cache:flush'
 alias cc='n98-magerun.phar cache:flush'
 alias ii='n98-magerun.phar index:reindex:all'
 alias ci='n98-magerun.phar index:reindex:all; n98-magerun.phar cache:flush; '
+alias mmth='n98-magerun.phar dev:template-hints'
 
 # commandes générales
 alias ll='ls -lAh'
