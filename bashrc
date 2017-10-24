@@ -142,6 +142,8 @@ alias cc='n98-magerun.phar cache:flush'
 alias ii='n98-magerun.phar index:reindex:all'
 alias ci='n98-magerun.phar index:reindex:all; n98-magerun.phar cache:flush; '
 alias mmth='n98-magerun.phar dev:template-hints'
+alias mmdev='mm dev:merge-js --off; mm dev:merge-css --off; mm cache:disable;'
+alias mmprod='mm dev:merge-js --on; mm dev:merge-css --on; mm cache:enable;'
 
 # commandes générales
 alias ll='ls -lAh'
