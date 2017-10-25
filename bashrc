@@ -170,8 +170,10 @@ alias gm='git commit -m'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
 alias gb='git branch'
-
 alias cdd='cd $(git rev-parse --show-cdup)'
+
+# composer
+alias ci='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs'
 
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
