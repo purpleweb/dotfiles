@@ -7,3 +7,8 @@ apt-get install silversearcher-ag
 # install colordiff
 # @see https://www.colordiff.org/
 apt-get install colordiff
+
+# install bash-git-prompt
+# https://github.com/magicmonty/bash-git-prompt
+cd ~
+git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
