@@ -12,3 +12,6 @@ apt-get install colordiff
 # https://github.com/magicmonty/bash-git-prompt
 cd ~
 git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --depth=1
+
+# install a php code sniffer
+composer global require "squizlabs/php_codesniffer=*"
