@@ -170,6 +170,7 @@ alias gm='git commit -m'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
 alias gb='git branch'
+alias gba='git branch -a'
 alias cdd='cd $(git rev-parse --show-cdup)'
 
 # composer
