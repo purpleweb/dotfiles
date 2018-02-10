@@ -15,3 +15,7 @@ git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt --d
 
 # install a php code sniffer
 composer global require "squizlabs/php_codesniffer=*"
+
+# install phpstorm
+# sudo snap install phpstorm --classic
+
