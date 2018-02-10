@@ -133,7 +133,7 @@ GIT_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
 
 
-# commandes Magerun
+# commandes magerun
 alias magerun='n98-magerun.phar'
 alias mg='n98-magerun.phar'
 alias mm='n98-magerun.phar'
@@ -186,6 +186,6 @@ fi
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+# vim mode for command line
 set -o vi
-
 
