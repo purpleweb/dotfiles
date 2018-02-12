@@ -175,6 +175,7 @@ alias cdd='cd $(git rev-parse --show-cdup)'
 
 # composer
 alias ci='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs'
+alias cit='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs; composer test'
 
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
