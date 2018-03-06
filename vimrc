@@ -33,6 +33,7 @@ Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-surround'
 
 " themes
 Plugin 'morhetz/gruvbox'
