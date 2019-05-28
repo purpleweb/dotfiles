@@ -169,6 +169,8 @@ alias ga='git add'
 alias gc='git checkout '
 alias gcp='git cherry-pick '
 alias gm='git commit -m'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
 alias gb='git branch '
@@ -204,5 +206,5 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline]]]]]]]'
 
-
 export BASHRC_INIT=true
+
