@@ -177,11 +177,13 @@ alias gb='git branch '
 alias gba='git branch -a'
 alias gbd='git branch -d '
 alias gbD='git branch -D '
+alias gltest='git log --oneline --color --grep="^Merge .* into ''*test$"'
+
 alias cdd='cd $(git rev-parse --show-cdup)'
 
 # composer
-alias ci='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs'
-alias cit='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs; composer test'
+alias ci='rm -rf vendor; rm composer.lock; composer install '
+alias cit='rm -rf vendor; rm composer.lock; composer install; composer test'
 alias ct='composer test'
 
 # wp autocompletion
@@ -196,6 +198,8 @@ export EDITOR="$VISUAL"
 
 # vim mode for command line
 set -o vi
+
+# eval "$(thefuck --alias)"
 
 # Set colors for less. Borrowed from https://wiki.archlinux.org/index.php/Color_output_in_console#less .
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
