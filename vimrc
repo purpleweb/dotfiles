@@ -77,7 +77,6 @@ map <C-l> <C-]>
 map Q <Nop>
 
 set pastetoggle=<F2>
-" set pastetoggle=<leader>p
 
 set wildmenu
 
@@ -85,6 +84,8 @@ let mapleader = "\<Space>"
 
 nmap <leader>n :NERDTreeToggle<CR>
 
+" Remap escape
+inoremap jk <Esc>
 
 " command Documentation split $HOME/.vim/sheets/documentation.txt
 
