@@ -22,6 +22,10 @@ git config --global user.name "Antoine Czerwonka"
 git config --global user.email "tonio.cz@gmail.com"
 
 # install PHP versions + extensions
+add-apt-repository ppa:ondrej/php
+apt-get update
+apt-get install -y php5.6
+apt-get install -y php7.4
 
 # install mysql
 
