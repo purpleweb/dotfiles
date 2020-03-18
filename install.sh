@@ -38,3 +38,6 @@ composer global require "squizlabs/php_codesniffer=*"
 
 # install laravel
 
+# install slack
+#sudo snap install slack --classic
+
