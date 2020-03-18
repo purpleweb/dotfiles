@@ -178,6 +178,7 @@ alias gba='git branch -a'
 alias gbd='git branch -d '
 alias gbD='git branch -D '
 alias gltest='git log --oneline --color --grep="^Merge .* into ''*test$"'
+alias gdiff='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'
 
 alias cdd='cd $(git rev-parse --show-cdup)'
 
