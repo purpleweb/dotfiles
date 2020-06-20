@@ -55,7 +55,7 @@ colorscheme gruvbox
 set background=dark
 
 set number
-set relativenumber
+" set relativenumber
 
 "" Whitespace
 set nowrap " don't wrap lines
@@ -103,7 +103,7 @@ set laststatus=2
 
 "set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
