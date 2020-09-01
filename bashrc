@@ -134,16 +134,16 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # source ~/.bash-git-prompt/gitprompt.sh
 
 # commandes magerun
-alias magerun='n98-magerun.phar'
-alias mg='n98-magerun.phar'
-alias mm='n98-magerun.phar'
-alias cf='n98-magerun.phar cache:flush'
-alias cc='n98-magerun.phar cache:flush'
-alias ii='n98-magerun.phar index:reindex:all'
-alias ci='n98-magerun.phar index:reindex:all; n98-magerun.phar cache:flush; '
-alias mmth='n98-magerun.phar dev:template-hints'
-alias mmdev='mm dev:merge-js --off; mm dev:merge-css --off; mm cache:disable;'
-alias mmprod='mm dev:merge-js --on; mm dev:merge-css --on; mm cache:enable;'
+#alias magerun='n98-magerun.phar'
+#alias mg='n98-magerun.phar'
+#alias mm='n98-magerun.phar'
+#alias cf='n98-magerun.phar cache:flush'
+#alias cc='n98-magerun.phar cache:flush'
+#alias ii='n98-magerun.phar index:reindex:all'
+#alias ci='n98-magerun.phar index:reindex:all; n98-magerun.phar cache:flush; '
+#alias mmth='n98-magerun.phar dev:template-hints'
+#alias mmdev='mm dev:merge-js --off; mm dev:merge-css --off; mm cache:disable;'
+#alias mmprod='mm dev:merge-js --on; mm dev:merge-css --on; mm cache:enable;'
 
 # commandes générales
 alias ll='ls -lAh'
@@ -166,16 +166,26 @@ alias gl='git log --oneline --color'
 alias gll='git log --oneline --color --decorate --graph'
 alias gf='git diff-tree --no-commit-id --name-only -r'
 alias ga='git add'
+alias gc='git checkout '
+alias gcp='git cherry-pick '
 alias gm='git commit -m'
+alias gcm='git commit -m'
+alias gcam='git commit -am'
 alias gd='git diff --color'
 alias gfiles='git log --name-only --color'
-alias gb='git branch'
+alias gb='git branch '
 alias gba='git branch -a'
+alias gbd='git branch -d '
+alias gbD='git branch -D '
+alias gltest='git log --oneline --color --grep="^Merge .* into ''*test$"'
+alias gdiff='git diff --ignore-space-at-eol -b -w --ignore-blank-lines'
+
 alias cdd='cd $(git rev-parse --show-cdup)'
 
 # composer
-alias ci='rm -rf vendor; rm composer.lock; composer install'
+alias ci='rm -rf vendor; rm composer.lock; composer install '
 alias cit='rm -rf vendor; rm composer.lock; composer install; composer test'
+alias ct='composer test'
 
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
@@ -190,6 +200,16 @@ export EDITOR="$VISUAL"
 # vim mode for command line
 set -o vi
 
-cd public_html/webauto/devis
+# eval "$(thefuck --alias)"
 
+# Set colors for less. Borrowed from https://wiki.archlinux.org/index.php/Color_output_in_console#less .
+export LESS_TERMCAP_mb=$'\E[1;31m'     # begin bold
+export LESS_TERMCAP_md=$'\E[1;36m'     # begin blink
+export LESS_TERMCAP_me=$'\E[0m'        # reset bold/blink
+export LESS_TERMCAP_so=$'\E[01;44;33m' # begin reverse video
+export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
+export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
+export LESS_TERMCAP_ue=$'\E[0m'        # reset underline]]]]]]]'
+
+export BASHRC_INIT=true
 

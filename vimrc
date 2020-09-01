@@ -13,14 +13,12 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
-"Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
 Plugin 'matchit.zip'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'raimondi/delimitmate'
@@ -32,11 +30,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'stanangeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
 Plugin 'adoy/vim-php-refactoring-toolbox'
-Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
-" Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-surround'
+Plugin 'machakann/vim-highlightedyank'
 
 " themes
 Plugin 'morhetz/gruvbox'
@@ -50,13 +48,15 @@ set encoding=utf-8
 set showcmd " display incomplete commands
 filetype plugin indent on " load file type plugins + indentation
 
+set visualbell
+
 set clipboard=unnamed
 
 colorscheme gruvbox
 set background=dark
 
 set number
-set relativenumber
+" set relativenumber
 
 "" Whitespace
 set nowrap " don't wrap lines
@@ -78,7 +78,6 @@ map <C-l> <C-]>
 map Q <Nop>
 
 set pastetoggle=<F2>
-" set pastetoggle=<leader>p
 
 set wildmenu
 
@@ -86,6 +85,8 @@ let mapleader = "\<Space>"
 
 nmap <leader>n :NERDTreeToggle<CR>
 
+" Remap escape
+inoremap jk <Esc>
 
 " command Documentation split $HOME/.vim/sheets/documentation.txt
 
@@ -103,7 +104,7 @@ set laststatus=2
 
 "set statusline+=%{fugitive#statusline()}
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
@@ -155,3 +156,5 @@ augroup phpSyntaxOverride
     autocmd!
     autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+let g:highlightedyank_highlight_duration = 100
