@@ -158,3 +158,7 @@ augroup phpSyntaxOverride
 augroup END
 
 let g:highlightedyank_highlight_duration = 100
+
+if !exists('##TextYankPost')
+    map y <Plug>(highlightedyank)
+endif
