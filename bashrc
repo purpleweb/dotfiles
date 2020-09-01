@@ -130,8 +130,8 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 
-source ~/.bash-git-prompt/gitprompt.sh
-
+# TODO ajouter un if exists
+# source ~/.bash-git-prompt/gitprompt.sh
 
 # commandes magerun
 alias magerun='n98-magerun.phar'
@@ -174,8 +174,8 @@ alias gba='git branch -a'
 alias cdd='cd $(git rev-parse --show-cdup)'
 
 # composer
-alias ci='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs'
-alias cit='rm -rf vendor; rm composer.lock; composer install --ignore-platform-reqs; composer test'
+alias ci='rm -rf vendor; rm composer.lock; composer install'
+alias cit='rm -rf vendor; rm composer.lock; composer install; composer test'
 
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
@@ -189,4 +189,7 @@ export EDITOR="$VISUAL"
 
 # vim mode for command line
 set -o vi
+
+cd public_html/webauto/devis
+
 
