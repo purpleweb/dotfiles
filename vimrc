@@ -34,7 +34,6 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-surround'
-Plugin 'machakann/vim-highlightedyank'
 
 " themes
 Plugin 'morhetz/gruvbox'
@@ -156,5 +155,3 @@ augroup phpSyntaxOverride
     autocmd!
     autocmd FileType php call PhpSyntaxOverride()
 augroup END
-
-let g:highlightedyank_highlight_duration = 100
