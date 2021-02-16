@@ -54,7 +54,7 @@ set clipboard=unnamed
 colorscheme gruvbox
 set background=dark
 
-set number
+"set number
 " set relativenumber
 
 "" Whitespace
