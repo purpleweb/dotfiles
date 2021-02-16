@@ -130,8 +130,8 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 
+# TODO ajouter un if exists
 source ~/.bash-git-prompt/gitprompt.sh
-
 
 # commandes magerun
 #alias magerun='n98-magerun.phar'
