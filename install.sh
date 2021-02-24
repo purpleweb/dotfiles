@@ -41,3 +41,9 @@ composer global require "squizlabs/php_codesniffer=*"
 # install slack
 #snap install slack --classic
 
+# install recode
+sudo apt install recode
+
+# install xmllib2-utils
+sudo apt install xmllib2-utils
+
