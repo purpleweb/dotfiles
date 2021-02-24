@@ -1,6 +1,8 @@
 #!/bin/bash
 
-git log master..develop | \
+branch=$(git branch --show-current)
+
+git log master..$branch | \
     grep -e "Merge .* into 'develop'" | \
     sed "s/' into 'develop'//" | \
     sed "s/.* Merge branch '//" | \
