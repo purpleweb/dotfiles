@@ -14,18 +14,13 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'mattn/emmet-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'matchit.zip'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'raimondi/delimitmate'
-Plugin 'tpope/vim-commentary'
-Plugin 'ap/vim-css-color'
 Plugin 'majutsushi/tagbar'
-Plugin 'nelsyeung/twig.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'stanangeloff/php.vim'
 Plugin 'alvan/vim-php-manual'
@@ -33,7 +28,6 @@ Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-surround'
 
 " themes
 Plugin 'morhetz/gruvbox'
@@ -53,9 +47,6 @@ set clipboard=unnamed
 
 colorscheme gruvbox
 set background=dark
-
-set number
-" set relativenumber
 
 "" Whitespace
 set nowrap " don't wrap lines
@@ -85,7 +76,6 @@ let mapleader = "\<Space>"
 nmap <leader>n :NERDTreeToggle<CR>
 
 " Remap escape
-inoremap jk <Esc>
 
 " command Documentation split $HOME/.vim/sheets/documentation.txt
 
