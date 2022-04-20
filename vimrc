@@ -28,6 +28,7 @@ Plugin 'adoy/vim-php-refactoring-toolbox'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'davidhalter/jedi-vim'
 
 " themes
 Plugin 'morhetz/gruvbox'
@@ -145,3 +146,5 @@ augroup phpSyntaxOverride
     autocmd!
     autocmd FileType php call PhpSyntaxOverride()
 augroup END
+
+nmap <F3> :!MAJ<CR>

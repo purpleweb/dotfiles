@@ -131,7 +131,7 @@ GIT_PROMPT_ONLY_IN_REPO=1
 # GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 
 # TODO ajouter un if exists
-# source ~/.bash-git-prompt/gitprompt.sh
+source ~/.bash-git-prompt/gitprompt.sh
 
 # commandes magerun
 #alias magerun='n98-magerun.phar'
@@ -187,6 +187,8 @@ alias ci='rm -rf vendor; rm composer.lock; composer install '
 alias cit='rm -rf vendor; rm composer.lock; composer install; composer test'
 alias ct='composer test'
 
+alias PERSO='cd ~/docs/perso/perso'
+
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
 WP_COMPL=/usr/local/bin/wp-completion.bash
@@ -212,4 +214,7 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline]]]]]]]'
 
 export BASHRC_INIT=true
+
+# phpbrew
+[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
