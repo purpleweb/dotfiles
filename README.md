@@ -6,3 +6,11 @@ Créez vous un fichier .gitignore_global à la racine de votre répertoire utili
 * Pour linux: `~/.gitignore_global`
 
 Déclarez le auprès de git : `git config --global core.excludesfile ~/.gitignore_global`
+
+# Apps
+
+- DBeaver-ce
+- Filezilla
+- VS Code
+- CopyQ
+- GParted
