@@ -188,6 +188,19 @@ alias cit='rm -rf vendor; rm composer.lock; composer install; composer test'
 alias ct='composer test'
 
 alias PERSO='cd ~/docs/perso/perso'
+alias CASTOR='cd ~/docs/purpleweb/castor_project/castor'
+alias PURPLEWEB='cd ~/docs/purpleweb/purpleweb/purpleweb'
+
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias deploy='git push; git checkout main; git merge develop; git push; git checkout production; git merge main; git push; git checkout develop;'
+
+# IPD
+# alias SYNC="~/public_html/deploy.sh"
+# alias git_config_ipd='git config --local user.email "antoine.czerwonka@infopro-digital.com"'
+# alias DEVIS="cd ~/public_html/webauto/devis"
+# alias BACK="cd ~/public_html/webauto/admin"
+# alias PUBLIC="cd ~/public_html/"
+
 
 # wp autocompletion
 # @see https://github.com/wp-cli/wp-cli/blob/master/utils/wp-completion.bash
