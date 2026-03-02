@@ -231,3 +231,7 @@ export BASHRC_INIT=true
 # phpbrew
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
+export PATH="$PATH:/home/antoine/Utils/DataGrip-2024.1.1/bin"
+
+alias portfolio='flatpak run info.portfolio_performance.PortfolioPerformance'
+
