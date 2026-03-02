@@ -31,3 +31,48 @@ Since you have a GTX 650Ti though, probably older drivers like nvidia-driver-470
 
 EDIT: I just saw you were also using Wayland? Probably not a good idea considering you have an Nvidia GPU. Wayland support is horrible for Nvidia and whenever I tried using it I experienced really bad instability. To switch to XOrg, at the login screen choose your user, and in the bottom right, click the gear icon. Choose XOrg and log in.
 
+# Config carte WIFI
+
+✅ Étape 1 — Appliquer les options rtw88 (priorité absolue)
+
+Crée le fichier :
+
+```
+sudo nano /etc/modprobe.d/rtw88.conf
+```
+
+Ajoute :
+
+```
+options rtw88_core disable_lps_deep=1
+options rtw88_core disable_lps=1
+options rtw88_pci disable_aspm=1
+```
+
+Puis :
+
+```
+sudo update-initramfs -u
+sudo reboot
+```
+
+👉 Ça corrige la majorité des RTL8822CE instables sous 24.04.
+
+✅ Étape 2 — Désactiver le powersave NetworkManager
+sudo nano /etc/NetworkManager/conf.d/wifi-powersave.conf
+
+Ajoute :
+
+```
+[connection]
+wifi.powersave = 2
+```
+
+Puis :
+
+```
+sudo systemctl restart NetworkManager
+```
+
+✅ Sinon acheter une nouvvelle carte => carte pcie intel ax200
+ https://www.amazon.fr/s?k=carte+pcie+intel+ax200&crid=3VUNNNFAOBAQP&sprefix=carte+PCIe+Intel+AX200%2Caps%2C340&ref=nb_sb_ss_mvt-t11-ranker_1_22
